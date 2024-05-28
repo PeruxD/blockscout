@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "build": "cd apps/block_scout_web/assets && npm install && npm run deploy && cd ../../../ && MIX_ENV=prod mix phx.digest"
+  }
+}
