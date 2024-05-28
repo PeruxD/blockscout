@@ -4,7 +4,7 @@ import Config
 
 config :block_scout_web, BlockScoutWeb.Endpoint,
   http: [:inet6, port: System.get_env("PORT") || 4000],
-  url: [host: "teraax.netlify.app", port: 80],
+  url: [host: "teraxda.netlify.app", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Configura para usar SSL si es necesario
