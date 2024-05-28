@@ -7,6 +7,9 @@ config :block_scout_web, BlockScoutWeb.Endpoint,
   url: [host: "teraax.netlify.app", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
+# Configura para usar SSL si es necesario
+config :block_scout_web, BlockScoutWeb.Endpoint,
+  force_ssl: [hsts: true]
 
 config :logger, :console, level: :none
 
