@@ -2,6 +2,12 @@ import Config
 
 # Do not print debug messages in production
 
+config :block_scout_web, BlockScoutWeb.Endpoint,
+  http: [:inet6, port: System.get_env("PORT") || 4000],
+  url: [host: "teraax.netlify.app", port: 80],
+  cache_static_manifest: "priv/static/cache_manifest.json"
+
+
 config :logger, :console, level: :none
 
 config :logger_json, :backend, level: :info
